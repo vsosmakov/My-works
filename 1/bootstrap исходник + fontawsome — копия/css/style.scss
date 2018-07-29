@@ -1,0 +1,610 @@
+/*============    ШРИФТЫ    ===========*/
+    @font-face {
+        font-family: 'pfdintextcondprobold';
+        src: url('fonts/pfdintextcondprobold.eot');
+        src: url('fonts/pfdintextcondprobold.eot') format('embedded-opentype'),
+             url('fonts/pfdintextcondprobold.woff2') format('woff2'),
+             url('fonts/pfdintextcondprobold.woff') format('woff'),
+             url('fonts/pfdintextcondprobold.ttf') format('truetype'),
+             url('fonts/pfdintextcondprobold.svg#pfdintextcondprobold') format('svg');
+    }
+    @font-face {
+        font-family: 'pfdintextcondprolight';
+        src: url('fonts/pfdintextcondprolight.eot');
+        src: url('fonts/pfdintextcondprolight.eot') format('embedded-opentype'),
+             url('fonts/pfdintextcondprolight.woff2') format('woff2'),
+             url('fonts/pfdintextcondprolight.woff') format('woff'),
+             url('fonts/pfdintextcondprolight.ttf') format('truetype'),
+             url('fonts/pfdintextcondprolight.svg#pfdintextcondprolight') format('svg');
+    }
+    @font-face {
+        font-family: 'pfdintextcondpromedium';
+        src: url('fonts/pfdintextcondpromedium.eot');
+        src: url('fonts/pfdintextcondpromedium.eot') format('embedded-opentype'),
+             url('fonts/pfdintextcondpromedium.woff2') format('woff2'),
+             url('fonts/pfdintextcondpromedium.woff') format('woff'),
+             url('fonts/pfdintextcondpromedium.ttf') format('truetype'),
+             url('fonts/pfdintextcondpromedium.svg#pfdintextcondpromedium') format('svg');
+    }
+
+    @mixin bold {
+      font-family: "pfdintextcondprobold";
+    }
+    @mixin medium {
+      font-family: "pfdintextcondpromedium";
+    }
+    @mixin light {
+      font-family: "pfdintextcondprolight";
+    }
+    @mixin smooth_tr ($duration : 0.1s) {
+      -moz-transition: all $duration 0.02s ease;
+      -o-transition: all $duration 0.02s ease;
+      -webkit-transition: all $duration 0.02s ease;
+    }
+
+/*============    ШАПКА    ===========*/
+
+  header {
+    color: #757575;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    .description {
+      h4 {
+        @include medium;
+        text-transform: uppercase;
+      }
+      h5 {
+        @include light;
+        font-size: 15px;
+      }
+    }
+    .phone {
+      text-align: right;
+      h3 {
+        margin-top: 7px;
+      }
+      p {
+        @include medium;
+      }
+      a {
+        @include medium;
+        color: #757575;
+        display: inline-block;
+        &:hover {
+          text-decoration: none;
+        }
+        &:before {
+          content: '';
+          vertical-align: middle;
+          margin-bottom: 5px;
+          margin-right: 3px;
+          width: 20px;
+          height: 20px;
+          background: url(../img/icon-phone.png) no-repeat center center;
+          background-size: cover;
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+/*============    БАЗОВЫЕ НАСТРОЙКИ    ===========*/
+
+  a:hover, a:visited, a:focus, a:active {
+    text-decoration: none;
+  }
+  .section_header h2 {
+    text-transform: uppercase;
+    color: #757575;
+    @include bold;
+  }
+  button {
+    outline: none;
+  }
+
+/*============    НАВИГАЦИЯ    ===========*/
+
+  nav {
+    background-color: #fafdfa;
+    ul.list-inline a {
+      @include light;
+      color: #757575;
+      display: inline-block;
+      text-transform: uppercase;
+      padding: 20px 10px;
+      @include smooth_tr(0.4s);
+      &:hover {
+        text-decoration: none;
+        background-color: #4CAF50;
+        color: #ffffff;
+      }
+    }
+    ul.list-inline {
+      margin-bottom: 0;
+    }
+  }
+
+/*============    ГЛАВНЫЙ ЭКРАН    ===========*/
+
+  section#main {
+    background:transparent url(../img/main_bg_1920.jpg) center center no-repeat;
+    background-size: cover;
+    .main_header {
+      h1 {
+        margin-top: 100px;
+        margin-bottom: 90px;
+        @include bold;
+        color: #ffffff;
+        text-transform: uppercase;
+        span {
+          background-color: #4CAF50;
+          padding: 5px;
+        }
+      }  
+    }
+    h3 {
+      text-transform: uppercase;
+      @include bold;
+      color: #757575;
+      span {
+        color: #FF9800;
+      }
+    }
+    .main_buttons {
+      margin-top: 10px;
+      margin-bottom: 80px;
+      button#get_gauger {
+        border: none;
+        background-color: #FF9800;
+        color: #ffffff;
+        padding: 18px 35px;
+        font-size: 20px;
+        @include bold;
+        text-transform: uppercase;
+        &:hover {
+          background-color: #F57C00;
+        }
+      }
+      button#get_type {
+        border: 2px solid #FF9800;
+        background-color: rgba(255,255,255,0.5);
+        color: #FF9800;
+        padding: 16px;
+        font-size: 20px;
+        @include bold;
+        text-transform: uppercase;
+        margin-left: 20px;
+        &:hover {
+          background-color: rgba(189, 189, 189, 0.2);
+          // color: #FFFFFF;
+        }
+      }
+    }
+  }
+
+/*============    ВИДЫ ЖАЛЮЗИ    ===========*/
+
+  section#types {
+    color: #757575;
+    padding-top: 70px;
+    .section_header {
+      margin-bottom: 70px;
+    }
+    h4 {
+      margin-top: 25px;
+      text-transform: uppercase;
+      @include medium;
+    }
+    button.more_btn {
+      border: 2px solid #4CAF50;
+      background-color: transparent;
+      color: #4CAF50;
+      @include smooth_tr(0.1s);
+      padding: 10px 35px;
+      text-transform: uppercase;
+      @include bold;
+      &:hover {
+        background-color: #4CAF50;
+        color: #FFFFFF;
+      }
+    }
+    button.order_btn {
+      border: 2px solid #4CAF50;
+      background-color: #4CAF50;
+      color: #FFFFFF;
+      @include smooth-tr ();
+      padding: 10px 35px;
+      text-transform: uppercase;
+      @include bold;
+      &:hover {
+        color: #4CAF50;
+        background-color: #FFFFFF;
+      }
+    }
+    .card {
+      @include smooth_tr(0.2s);
+      padding: 5px;
+      border: 2px solid transparent;
+      &:hover {
+        border: 2px solid rgba(76,185,80, 0.5);
+        background-color: rgba(189, 189, 189, 0.1);
+      }
+    }
+
+  }
+
+/*============    БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ    ===========*/
+
+  section#help {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    h3 {
+      color: #FF9800;
+      text-transform: uppercase;
+      @include bold;
+    }
+    p {
+      color: #757575;
+      @include light;
+      font-size: 18px;
+    }
+    img.help_img {
+      margin-top: 25px;
+    }
+    button.consult_btn {
+      @include bold;
+      text-transform: uppercase;
+      border: 2px solid #FF9800;
+      background-color: transparent;
+      color: #FF9800;
+      padding: 10px 35px;
+      &:hover {
+        background-color: #FF9800;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+/*============    АКЦИЯ    ===========*/
+
+  section#offer {
+    padding-top: 70px;
+    h4 {
+      text-transform: uppercase;
+      color: #FF9800;
+      @include bold;
+    }
+    h3 {
+      text-transform: uppercase;
+      color: #FF9800;
+      @include bold;
+    }
+    p {
+      @include light;
+      color: #757575;
+      font-size: 22px;
+    }
+    input[name="name"] {
+      background: url(../img/icon-name-input.png) no-repeat center left 5px;
+      background-size: contain;
+      padding: 25px;
+      padding-left: 55px;
+      border-radius: 0;
+      border: 1px solid #757575;
+      @include light;
+      opacity: 0.6;
+      &:hover, &:focus {
+        opacity: 1;      
+      }
+
+    }
+    input[name="phone"] {
+      background: url(../img/icon-phone-input.png) no-repeat center left 5px;
+      background-size: contain;
+      padding: 25px;
+      padding-left: 55px;
+      border-radius: 0;
+      border: 1px solid #757575;
+      @include light;
+      opacity: 0.6;
+      &:hover, &:focus {
+        opacity: 1;
+      }
+    }
+    button[type="submit"] {
+      @include bold;
+      text-transform: uppercase;
+      border: 1px solid #FF9800;
+      background-color: #FF9800;
+      color: #FFFFFF;
+      padding: 15px 55px;
+      &:hover {
+        background-color: #FF9800;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+/*============    ОТЗЫВЫ    ===========*/
+
+  section#ufeedback {
+    padding-bottom: 50px;
+    .section_header {
+      margin-bottom: 70px;
+    }
+    .item {
+      height: 300px;
+      background-color: #fafdfa;
+      padding: 20px;
+      h5 {
+        margin-top: 25px; 
+        @include medium;
+        color: #757575;
+        font-size: 20px;
+      }
+      p {
+        @include light;
+        margin-top: 30px;
+        font-size: 17px;
+      }
+    }
+    .carousel-indicators {
+      bottom: -50px;
+      & .active {
+        background-color:#4CAF50;
+      }
+      li {
+        border: 1px solid #4CAF50;
+      }
+    }
+  }
+
+/*============    ФУТЕР    ===========*/
+
+  footer {
+    margin-top: 25px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    background-color: #757575;
+    color: #FFFFFF;
+    h2 {
+      margin-left: -15px;
+      @include bold;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+    address {
+      margin-top: 10px;
+      p#uaddress {
+        margin-bottom: 0;
+        @include light;
+        text-transform: uppercase;
+        &:before {
+          content: '';
+          width: 12px;
+          height: 12px;
+          background: url(../img/map_marker.png) no-repeat center center;
+          display: inline-block;
+          vertical-align: middle;
+          margin-bottom: 3px;
+        }
+      }
+      p#kazan {
+        margin-top: 0;
+        font-size: 20px;
+        @include light;
+      }
+    }
+    p#phone_footer {
+      margin-bottom: 0;
+      @include light;
+      text-transform: uppercase;
+      &:before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        background: url(../img/phone_marker.png) no-repeat center center;
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 3px;
+      }
+    }
+    p#phone_number {
+      margin-top: 0;
+      font-size: 20px;
+      @include light;
+    }
+    .social{
+      margin-top: 30px;
+    }
+    .social_icon {
+      margin-right: 5px;
+      display: inline-block;
+      background-color:#BDBDBD;
+      padding: 8px;
+      padding-left: 9px;
+      border-radius: 50%;
+      text-align: center;
+      width: 37px;
+      height: 37px;
+      &:hover {
+        background-color: #FFFFFF;
+      }
+    }
+    button#get_answer {
+      text-transform: uppercase;
+      margin-left: 10px;
+      background-color: transparent;
+      padding: 7px 35px;
+      color: #FFFFFF;
+      border: 2px solid #FFFFFF;
+      @include bold;
+      &:hover {
+        background-color: #FFFFFF;
+        color: #757575;
+      }
+    }
+    .details_row {
+      margin-top: 30px;
+    }
+    .details {
+      h5 {
+        @include medium;
+        font-size: 20px;
+      }
+      p {
+        text-transform: uppercase;
+        @include light;
+
+      }
+    }
+    .policy {
+      text-align: center;
+      a {
+        color: #FFFFFF;
+        border-bottom: 1px dashed #FFFFFF;
+      }
+    }
+    .osmakov {
+      text-align: right;
+      h4 {
+        @include bold;
+        text-transform: uppercase;
+      }
+      a {
+        color: #4CAF50;
+      }
+    }
+  }
+
+/*============    	ВСПЛЫВАЮЩИЕ ОКНА    ===========*/
+
+  .modal-dialog {
+    margin-top: 15%;
+  }
+  .header_modal {
+    h4{
+      text-transform: uppercase;
+      @include bold;
+      color: #757575;
+    }
+  }
+  .modal-header {
+    border-bottom: none;
+    padding: 0;
+    .close {
+      text-shadow: none;
+      color: #FFFFFF;
+      opacity: 0.9;
+      margin-top: -20px;
+      margin-right: -20px;
+    }
+  }
+  .modal-content { /* start .modal-contenet */
+    border-radius: 0;
+    input[name="name"] {
+      margin-top: 15px;
+      background: url(../img/icon-name-input.png) no-repeat center left 5px;
+      background-size: contain;
+      padding: 15px;
+      padding-left: 35px;
+      border-radius: 0;
+      border: 1px solid #757575;
+      @include light;
+      opacity: 0.6;
+      &:hover, &:focus {
+        opacity: 1;      
+      }
+
+    }
+    input[name="phone"] {
+      margin-top: 15px;
+      background: url(../img/icon-phone-input.png) no-repeat center left 5px;
+      background-size: contain;
+      padding: 15px;
+      padding-left: 35px;
+      border-radius: 0;
+      border: 1px solid #757575;
+      @include light;
+      opacity: 0.6;
+      &:hover, &:focus {
+        opacity: 1;
+      }
+    }
+    button[type="submit"] {
+      margin-top: 15px;
+      @include bold;
+      text-transform: uppercase;
+      border: 1px solid #FF9800;
+      background-color: #FF9800;
+      color: #FFFFFF;
+      padding: 7px 55px;
+      &:hover {
+        background-color: #FF9800;
+        color: #FFFFFF;
+      }
+      &.modal_order_btn {
+        width: 100%;
+        padding: 6px 55px;
+      }
+    }
+    p {
+      @include light;
+      & span {
+        @include medium;
+        font-size: 24px;
+        color: #388E3C;
+      }
+    }
+  } /* end .modal-content */
+
+  .modal_order_row {
+    margin: auto;
+    width: 70%;
+  }
+
+  .modal_order_col {
+    padding: 0 10px;
+  }
+
+  .big-modal{
+    width: 60%;
+  }
+
+  .header_modal_info {
+    h4 {
+      margin-top: 5px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      @include bold;
+      color: #757575
+    }
+
+  }
+  
+  
+
+/*============    	АДАПТИВ    ===========*/
+
+@media(min-width:0px) and (max-width:320px) {
+	
+}
+
+@media(min-width:321px) and (max-width:480px) {
+	
+}
+
+@media(min-width:481px) and (max-width:768px) {
+	
+}
+
+@media(min-width:769px) and (max-width:992px) {
+	
+}
+
+@media(min-width:993px) and (max-width:1200px) {
+	
+}
+
+
+
