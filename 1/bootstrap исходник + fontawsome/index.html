@@ -67,15 +67,15 @@
 
     <section id="main">
       <div class="container">
-        <div class="row main_header">
+        <div class="row wow fadeInUp main_header" >
           <h1><span>Install the blinds in your apartment</span> <br> <span>for 2 hours with full warranty</span> <br> <span>and free shipping</span></h1>
         </div>
-        <div class="row">
+        <div class="row wow fadeInLeft" data-wow-delay="0.3s">
           <h3>Order the gauger on the house. <span>it's free</span></h3>
         </div>
         <div class="row main_buttons"> 
-          <button data-toggle="modal" id="get_gauger" href="#get_gauger_modal">Сall a gauger</button>
-          <a href="#types"><button id="get_type">Choose jalousie</button></a>
+          <button class="wow fadeInLeft" data-wow-delay="0.5s" data-toggle="modal" id="get_gauger" href="#get_gauger_modal">Сall a gauger</button>
+          <a href="#types"><button class="wow fadeInLeft" data-wow-delay="0.5s" id="get_type">Choose jalousie</button></a>
         </div>
       </div>
     </section>
@@ -83,13 +83,13 @@
     <section id="types">
       <div class="container">
         <div class="row">
-          <div class="section_header text-center">
+          <div class="section_header wow fadeInUp text-center">
             <h2>Types of jalousie</h2>
           </div>
         </div>
         <div class="row text-center">
           <div class="col-md-3">
-            <div class="card">
+            <div class="card wow bounceInUp" data-wow-delay="0.2s">
               <img src="img/types-1.jpg" alt="Horizontal jalousie" class="img-responsive center-block">
               <h4>Horizontal jalousie</h4>
               <br>
@@ -98,7 +98,7 @@
             </div>
           </div>
           <div class="col-md-3">
-            <div class="card">
+            <div class="card wow bounceInUp" data-wow-delay="0.4s">
               <img src="img/types-2.jpg" alt="Vertical jalousie" class="img-responsive center-block">
               <h4>Vertical jalousie</h4>
               <br>
@@ -107,7 +107,7 @@
             </div>
           </div>
           <div class="col-md-3">
-            <div class="card">
+            <div class="card wow bounceInUp" data-wow-delay="0.6s">
               <img src="img/types-3.jpg" alt="Roller jalousie" class="img-responsive center-block">
               <h4>Roller jalousie</h4>
               <br>
@@ -116,7 +116,7 @@
             </div>
           </div>
           <div class="col-md-3">
-            <div class="card">
+            <div class="card wow bounceInUp" data-wow-delay="0.8s">
               <img src="img/types-4.jpg" alt="Pleated jalousie" class="img-responsive center-block">
               <h4>Pleated jalousie</h4>
               <br>
@@ -132,14 +132,14 @@
       <div class="container">
         <div class="row">
           <div class="col-md-5 col-md-offset-2">
-            <h3>Do not know what jalousie to choose?</h3>
+            <h3 class="wow bounceInDown" data-wow-delay="0.5s">Do not know what jalousie to choose?</h3>
             <br>
-            <p>Leave a request for consultation and our specialist will answer
+            <p class="wow bounceInLeft" data-wow-delay="0.5s">Leave a request for consultation and our specialist will answer
               <br> all your questions in detail. It's free</p>
               <br>
-              <button class="consult_btn" data-toggle="modal" href="#get_consult">Free consultation</button>
+              <button class="consult_btn wow bounceInUp" data-wow-delay="0.5s" data-toggle="modal" href="#get_consult">Free consultation</button>
           </div>
-          <div class="col-md-2 col-md-offset-1">
+          <div class="col-md-2 col-md-offset-1 wow bounceInRight" data-wow-delay="0.5s">
             <img src="img/help_img.jpg" alt="Free consultation" class="help_img img-responsive center-block">
           </div>
         </div>
@@ -149,7 +149,7 @@
     <section id="portfolio">
       <div class="container">
         <div class="row">
-          <div class="section_header text-center">
+          <div class="section_header wow fadeInUp text-center">
             <h2 Portfolio="">Portfolio</h2>
           </div>
         </div>
@@ -179,7 +179,7 @@
     <section id="offer">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3 wow tada" data-wow-delay="1s">
             <img src="img/gift.jpg" alt="Gift" class="img-responsive center-block gift">
           </div>
           <div class="col-md-9">
@@ -208,7 +208,7 @@
     <section id="ufeedback">
       <div class="container">
         <div class="row">
-          <div class="section_header text-center">
+          <div class="section_header wow fadeInUp text-center">
             <h2>Feedback on our work</h2>
           </div>
         </div>
@@ -341,11 +341,11 @@
       <div class="container">
         <div class="row">
           <div class="col-md-5 col-md-offset-1">
-            <div class="map">
+            <div class="map wow fadeInLeft" data-wow-delay="0.5s">
               <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A49e8ce6747e4f7c8a6a3fcab9dd9a3fadc5bc4122f1e3b028b80133a3567086e&amp;width=100%25&amp;height=330&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 wow fadeInRight" data-wow-delay="0.5s">
             <h2>Contacts</h2>
             <div class="row">
               <address>
@@ -831,6 +831,8 @@
       });
     </script>
 
+
+    <link rel="stylesheet" href="css/animate.css">
     <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
 
