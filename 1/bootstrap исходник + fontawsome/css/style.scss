@@ -42,7 +42,7 @@
       -webkit-transition: all $duration 0.02s ease;
     }
 
-/*============    ШАПКА    ===========*/
+/*============    HEADER    ===========*/
 
   header {
     color: #757575;
@@ -89,7 +89,7 @@
     }
   }
 
-/*============    БАЗОВЫЕ НАСТРОЙКИ    ===========*/
+/*============    BASE SETTINGS    ===========*/
 
   a:hover, a:visited, a:focus, a:active {
     text-decoration: none;
@@ -103,7 +103,7 @@
     outline: none;
   }
 
-/*============    НАВИГАЦИЯ    ===========*/
+/*============    NAVIGATION    ===========*/
 
   nav {
     background-color: #fafdfa;
@@ -123,14 +123,14 @@
     ul.list-inline {
       margin-bottom: 0;
     }
-      /*фиксированное плавающее меню*/
-     top: 145px; /*высота шапки в пикселях*/
+      /*fixed float menu*/
+     top: 145px; /*height of main menu in px*/
      position: fixed;
      z-index: 100;
      width: 100%; 
   }
 
-/*============    ГЛАВНЫЙ ЭКРАН    ===========*/
+/*============    MAIN SCREEN    ===========*/
 
   section#main {
     background:transparent url(../img/main_bg_1920.jpg) center center no-repeat;
