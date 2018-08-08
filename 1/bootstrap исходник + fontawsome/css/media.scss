@@ -1,0 +1,219 @@
+  
+/*============      АДАПТИВ    ===========*/
+
+.dropdown-toggle {
+  border: 1px solid #000000;
+  padding: 13px 13px 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+
+  i {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #757575;
+  }
+}
+
+.mobile_header {
+    height: 50px;
+      .phone h3 {
+        margin-top: 12px;
+      }
+      nav {
+        top: 0;
+        height: 50px;
+      }
+  }
+
+.mobile_menu_icon {
+  margin-top: 6px;
+}
+
+ul.dropdown-menu {
+  padding-left: 5px;
+  font-size: 18px;
+}
+
+@media(min-width:0px) and (max-width:320px) {
+  section#main {
+    .main_header {
+      h1 {
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.7;
+        margin-top: 40px;
+        margin-bottom: 30px;
+      }
+    }
+    h3 {
+      font-size: 15px;
+      text-align: center;
+    }
+    .main_buttons {
+      button {
+        display: block;
+        margin: 0 auto;
+      }
+      button#get_gauger {
+        padding: 10px 19px;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      button#get_type {
+        padding: 10px 10px;
+        font-size: 12px;
+        margin-bottom: 10px;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+  section#types {
+    padding-top: 30px;
+    .section_header {
+      margin-bottom: 30px;
+    }
+  }
+  section#help {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    h3 {
+      text-align: center;
+    }
+    p br {
+      display: none;
+    }
+    button.consult_btn {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  section#offer {
+    br {
+      display: none;
+    }
+    h4 {
+      text-align: center;
+    }
+    h3 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    input[name="phone"] {
+      margin-top: 5px;
+    }
+    button[type="submit"] {
+      display: block;
+      margin: 0 auto;
+      margin-top: 5px;
+      padding: 15px 115px;
+    }
+  }
+  section#ufeedback 
+    .section_header {
+      margin-bottom: 30px;
+    }
+}
+
+@media(min-width:321px) and (max-width:480px) {
+  section#main {
+    .main_header {
+      h1 {
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.7;
+        margin-top: 40px;
+        margin-bottom: 30px;
+      }
+    }
+    h3 {
+      font-size: 15px;
+      text-align: center;
+    }
+    .main_buttons {
+      button {
+        display: block;
+        margin: 0 auto;
+      }
+      button#get_gauger {
+        padding: 10px 19px;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      button#get_type {
+        padding: 10px 10px;
+        font-size: 12px;
+        margin-bottom: 10px;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+  section#types {
+    padding-top: 30px;
+    .section_header {
+      margin-bottom: 30px;
+    }
+  }
+  section#help {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    h3 {
+      text-align: center;
+    }
+    p br {
+      display: none;
+    }
+    button.consult_btn {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  section#offer {
+    br {
+      display: none;
+    }
+    h4 {
+      text-align: center;
+    }
+    h3 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    input[name="phone"] {
+      margin-top: 5px;
+    }
+    button[type="submit"] {
+      display: block;
+      margin: 0 auto;
+      margin-top: 5px;
+      padding: 15px 115px;
+    }
+  }
+  section#ufeedback 
+    .section_header {
+      margin-bottom: 30px;
+    }
+}
+
+@media(min-width:481px) and (max-width:640px) {
+  
+}
+
+@media(min-width:640px) and (max-width:768px) {
+  
+}
+
+@media(min-width:769px) and (max-width:992px) {
+  
+}
+
+@media(min-width:993px) and (max-width:1200px) {
+  
+}

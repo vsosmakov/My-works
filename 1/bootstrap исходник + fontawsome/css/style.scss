@@ -1,4 +1,4 @@
-/*============    ШРИФТЫ    ===========*/
+/*============    FONTS    ===========*/
     @font-face {
         font-family: 'pfdintextcondprobold';
         src: url('fonts/pfdintextcondprobold.eot');
@@ -188,7 +188,7 @@
     }
   }
 
-/*============    ВИДЫ ЖАЛЮЗИ    ===========*/
+/*============    TYPES OF JALOUSIE    ===========*/
 
   section#types {
     color: #757575;
@@ -239,7 +239,7 @@
 
   }
 
-/*============    БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ    ===========*/
+/*============    FREE CONSULT    ===========*/
 
   section#help {
     padding-top: 70px;
@@ -271,7 +271,7 @@
     }
   }
 
-/*============    АКЦИЯ    ===========*/
+/*============    SALE    ===========*/
 
   section#offer {
     padding-top: 70px;
@@ -331,7 +331,7 @@
     }
   }
 
-/*============    ОТЗЫВЫ    ===========*/
+/*============    FEEDBACK    ===========*/
 
   section#ufeedback {
     padding-bottom: 50px;
@@ -365,7 +365,7 @@
     }
   }
 
-/*============    ФУТЕР    ===========*/
+/*============    FOOTER    ===========*/
 
   footer {
     margin-top: 25px;
@@ -483,7 +483,7 @@
     }
   }
 
-/*============    	ВСПЛЫВАЮЩИЕ ОКНА    ===========*/
+/*============    	MODAL WINDOWS    ===========*/
 
   .modal-dialog {
     margin-top: 15%;
@@ -612,30 +612,5 @@
     }
 
   }
-  
-  
 
-/*============    	АДАПТИВ    ===========*/
-
-@media(min-width:0px) and (max-width:320px) {
-	
-}
-
-@media(min-width:321px) and (max-width:480px) {
-	
-}
-
-@media(min-width:481px) and (max-width:768px) {
-	
-}
-
-@media(min-width:769px) and (max-width:992px) {
-	
-}
-
-@media(min-width:993px) and (max-width:1200px) {
-	
-}
-
-
-
+@import "media.scss";

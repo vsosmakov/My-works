@@ -20,7 +20,7 @@
     <![endif]-->
   </head>
   <body>
-    <header>
+    <header class="hidden-xs">
       <div class="container">
         <div class="row">
           <div class="col-sm-3 logo">
@@ -38,32 +38,55 @@
       </div>
     </header>
 
-    <nav id="top_nav">
+    <nav class="hidden-xs" id="top_nav">
       <div class="container">
         <div class="row">
           <ul class="list-inline">
-            <a href="#main">
-              <li>Main</li>
-            </a>
-            <a href="#types">
-              <li>Types of jalousie</li>
-            </a>
-            <a href="#portfolio">
-              <li>Portfolio</li>
-            </a>
-            <a href="#offer">
-              <li>Sale!</li>
-            </a>
-            <a href="#ufeedback">
-              <li>Feedback</li>
-            </a>
-            <a href="#contacts">
-              <li>Contacts</li>
-            </a>
+            
+              <li><a href="#main">Main</a></li>
+            
+            
+              <li><a href="#types">Types of jalousie</a></li>
+            
+            
+              <li><a href="#portfolio">Portfolio</a></li>
+            
+            
+              <li><a href="#offer">Sale!</a></li>
+            
+            
+              <li><a href="#ufeedback">Feedback</a></li>
+           
+            
+              <li><a href="#contacts">Contacts</a></li>
+            
           </ul>
         </div>
       </div>
     </nav>
+
+    <header class="visible-xs mobile_header">
+      <nav class="visible-xs">
+        <div class="container">
+          <div class="col-xs-3 mobile_menu_icon">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-bars"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#main">Main</a></li>
+              <li><a href="#types">Types of jalousie</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#offer">Sale!</a></li>
+              <li><a href="#ufeedback">Feedback</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-7 col-xs-offset-2 phone">
+            <h3><a href="tel:+79219982508">998-25-08</a></h3>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <section id="main">
       <div class="container">

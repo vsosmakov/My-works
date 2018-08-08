@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/*============      АДАПТИВ    ===========*/
+.dropdown-toggle {
+  border: 1px solid #000000;
+  padding: 13px 13px 10px;
+  margin-top: 10px;
+  border-radius: 5px; }
+  .dropdown-toggle i {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #757575; }
+
+.mobile_header {
+  height: 50px; }
+  .mobile_header .phone h3 {
+    margin-top: 12px; }
+  .mobile_header nav {
+    top: 0;
+    height: 50px; }
+
+.mobile_menu_icon {
+  margin-top: 6px; }
+
+ul.dropdown-menu {
+  padding-left: 5px;
+  font-size: 18px; }
+
+@media (min-width: 0px) and (max-width: 320px) {
+  section#main .main_header h1 {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.7;
+    margin-top: 40px;
+    margin-bottom: 30px; }
+  section#main h3 {
+    font-size: 15px;
+    text-align: center; }
+  section#main .main_buttons button {
+    display: block;
+    margin: 0 auto; }
+  section#main .main_buttons button#get_gauger {
+    padding: 10px 19px;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  section#main .main_buttons button#get_type {
+    padding: 10px 10px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: block;
+    margin: 0 auto; }
+
+  section#types {
+    padding-top: 30px; }
+    section#types .section_header {
+      margin-bottom: 30px; }
+
+  section#help {
+    padding-top: 30px;
+    padding-bottom: 20px; }
+    section#help h3 {
+      text-align: center; }
+    section#help p br {
+      display: none; }
+    section#help button.consult_btn {
+      display: block;
+      margin: 0 auto; }
+
+  section#offer br {
+    display: none; }
+  section#offer h4 {
+    text-align: center; }
+  section#offer h3 {
+    text-align: center; }
+  section#offer p {
+    text-align: center; }
+  section#offer input[name="phone"] {
+    margin-top: 5px; }
+  section#offer button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 15px 115px; }
+
+  section#ufeedback
+  .section_header {
+    margin-bottom: 30px; } }
+@media (min-width: 321px) and (max-width: 480px) {
+  section#main .main_header h1 {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.7;
+    margin-top: 40px;
+    margin-bottom: 30px; }
+  section#main h3 {
+    font-size: 15px;
+    text-align: center; }
+  section#main .main_buttons button {
+    display: block;
+    margin: 0 auto; }
+  section#main .main_buttons button#get_gauger {
+    padding: 10px 19px;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  section#main .main_buttons button#get_type {
+    padding: 10px 10px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: block;
+    margin: 0 auto; }
+
+  section#types {
+    padding-top: 30px; }
+    section#types .section_header {
+      margin-bottom: 30px; }
+
+  section#help {
+    padding-top: 30px;
+    padding-bottom: 20px; }
+    section#help h3 {
+      text-align: center; }
+    section#help p br {
+      display: none; }
+    section#help button.consult_btn {
+      display: block;
+      margin: 0 auto; }
+
+  section#offer br {
+    display: none; }
+  section#offer h4 {
+    text-align: center; }
+  section#offer h3 {
+    text-align: center; }
+  section#offer p {
+    text-align: center; }
+  section#offer input[name="phone"] {
+    margin-top: 5px; }
+  section#offer button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 15px 115px; }
+
+  section#ufeedback
+  .section_header {
+    margin-bottom: 30px; } }
+
+/*# sourceMappingURL=media.css.map */

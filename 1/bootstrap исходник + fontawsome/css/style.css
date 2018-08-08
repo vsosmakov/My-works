@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*============    ШРИФТЫ    ===========*/
+/*============    FONTS    ===========*/
 @font-face {
   font-family: 'pfdintextcondprobold';
   src: url("fonts/pfdintextcondprobold.eot");
@@ -128,7 +128,7 @@ section#main {
       section#main .main_buttons button#get_type:hover {
         background-color: rgba(189, 189, 189, 0.2); }
 
-/*============    ВИДЫ ЖАЛЮЗИ    ===========*/
+/*============    TYPES OF JALOUSIE    ===========*/
 section#types {
   color: #757575;
   padding-top: 70px; }
@@ -174,7 +174,7 @@ section#types {
       border: 2px solid rgba(76, 185, 80, 0.5);
       background-color: rgba(189, 189, 189, 0.1); }
 
-/*============    БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ    ===========*/
+/*============    FREE CONSULT    ===========*/
 section#help {
   padding-top: 70px;
   padding-bottom: 50px; }
@@ -199,7 +199,7 @@ section#help {
       background-color: #FF9800;
       color: #FFFFFF; }
 
-/*============    АКЦИЯ    ===========*/
+/*============    SALE    ===========*/
 section#offer {
   padding-top: 70px; }
   section#offer h4 {
@@ -247,7 +247,7 @@ section#offer {
       background-color: #FF9800;
       color: #FFFFFF; }
 
-/*============    ОТЗЫВЫ    ===========*/
+/*============    FEEDBACK    ===========*/
 section#ufeedback {
   padding-bottom: 50px; }
   section#ufeedback .section_header {
@@ -272,7 +272,7 @@ section#ufeedback {
     section#ufeedback .carousel-indicators li {
       border: 1px solid #4CAF50; }
 
-/*============    ФУТЕР    ===========*/
+/*============    FOOTER    ===========*/
 footer {
   margin-top: 25px;
   padding-top: 50px;
@@ -364,7 +364,7 @@ footer {
     footer .osmakov a {
       color: #4CAF50; }
 
-/*============    	ВСПЛЫВАЮЩИЕ ОКНА    ===========*/
+/*============    	MODAL WINDOWS    ===========*/
 .modal-dialog {
   margin-top: 15%; }
   .modal-dialog.policy-modal {
@@ -470,6 +470,151 @@ footer {
   font-family: "pfdintextcondprobold";
   color: #757575; }
 
-/*============    	АДАПТИВ    ===========*/
+/*============      АДАПТИВ    ===========*/
+.dropdown-toggle {
+  border: 1px solid #000000;
+  padding: 13px 13px 10px;
+  margin-top: 10px;
+  border-radius: 5px; }
+  .dropdown-toggle i {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #757575; }
+
+.mobile_header {
+  height: 50px; }
+  .mobile_header .phone h3 {
+    margin-top: 12px; }
+  .mobile_header nav {
+    top: 0;
+    height: 50px; }
+
+.mobile_menu_icon {
+  margin-top: 6px; }
+
+ul.dropdown-menu {
+  padding-left: 5px;
+  font-size: 18px; }
+
+@media (min-width: 0px) and (max-width: 320px) {
+  section#main .main_header h1 {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.7;
+    margin-top: 40px;
+    margin-bottom: 30px; }
+  section#main h3 {
+    font-size: 15px;
+    text-align: center; }
+  section#main .main_buttons button {
+    display: block;
+    margin: 0 auto; }
+  section#main .main_buttons button#get_gauger {
+    padding: 10px 19px;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  section#main .main_buttons button#get_type {
+    padding: 10px 10px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: block;
+    margin: 0 auto; }
+
+  section#types {
+    padding-top: 30px; }
+    section#types .section_header {
+      margin-bottom: 30px; }
+
+  section#help {
+    padding-top: 30px;
+    padding-bottom: 20px; }
+    section#help h3 {
+      text-align: center; }
+    section#help p br {
+      display: none; }
+    section#help button.consult_btn {
+      display: block;
+      margin: 0 auto; }
+
+  section#offer br {
+    display: none; }
+  section#offer h4 {
+    text-align: center; }
+  section#offer h3 {
+    text-align: center; }
+  section#offer p {
+    text-align: center; }
+  section#offer input[name="phone"] {
+    margin-top: 5px; }
+  section#offer button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 15px 115px; }
+
+  section#ufeedback
+  .section_header {
+    margin-bottom: 30px; } }
+@media (min-width: 321px) and (max-width: 480px) {
+  section#main .main_header h1 {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.7;
+    margin-top: 40px;
+    margin-bottom: 30px; }
+  section#main h3 {
+    font-size: 15px;
+    text-align: center; }
+  section#main .main_buttons button {
+    display: block;
+    margin: 0 auto; }
+  section#main .main_buttons button#get_gauger {
+    padding: 10px 19px;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  section#main .main_buttons button#get_type {
+    padding: 10px 10px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: block;
+    margin: 0 auto; }
+
+  section#types {
+    padding-top: 30px; }
+    section#types .section_header {
+      margin-bottom: 30px; }
+
+  section#help {
+    padding-top: 30px;
+    padding-bottom: 20px; }
+    section#help h3 {
+      text-align: center; }
+    section#help p br {
+      display: none; }
+    section#help button.consult_btn {
+      display: block;
+      margin: 0 auto; }
+
+  section#offer br {
+    display: none; }
+  section#offer h4 {
+    text-align: center; }
+  section#offer h3 {
+    text-align: center; }
+  section#offer p {
+    text-align: center; }
+  section#offer input[name="phone"] {
+    margin-top: 5px; }
+  section#offer button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 15px 115px; }
+
+  section#ufeedback
+  .section_header {
+    margin-bottom: 30px; } }
 
 /*# sourceMappingURL=style.css.map */
